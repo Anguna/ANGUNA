@@ -1,5 +1,7 @@
 body{
     background-color: black;
+    background-image: url(https://img.freepik.com/vetores-premium/fundo-geometrico-de-textura-abstrata-preto_67845-972.jpg?w=996);
+    background-size: cover;
 }
 h1{
     padding-top: 20px;
@@ -20,4 +22,13 @@ div{
     max-width: 800px;
     min-width: 250px;
     padding: 5px;
+    border-radius: 5px;
+}
+@media (min-width: 920px){
+    h2{
+    padding-left: 100px;}
+}
+@media (min-width: 1400px){
+    h2{
+    padding-left: 200px;}
 }
