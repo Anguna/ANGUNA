@@ -1,41 +1,108 @@
-body{
-    background-color: black;
-    background-image: url(https://img.freepik.com/vetores-premium/fundo-geometrico-de-textura-abstrata-preto_67845-972.jpg?w=996);
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                      url('https://img.freepik.com/vetores-premium/fundo-geometrico-de-textura-abstrata-preto_67845-972.jpg?w=996');
     background-size: cover;
-}
-h1{
-    padding-top: 20px;
+    background-attachment: fixed;
     color: white;
+    line-height: 1.6;
 }
-h2{
-    color: white;
-    
+
+/* Header e Logo */
+header {
+    padding: 20px;
+    text-align: center;
 }
-img{
-    width: 125px;
-    height: 125px;
-    float: left;
+
+.logo {
+    width: 100px;
+    height: auto;
+    /* Removi o float para evitar bugs de layout */
 }
-div{
-    background-color: white;
-    margin: auto;
-    max-width: 800px;
-    min-width: 250px;
-    padding: 5px;
-    border-radius: 5px;
+
+/* Conteúdo Principal */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 }
-@media (min-width: 920px){
-    h2{
-    padding-left: 100px;}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
 }
-@media (min-width: 1400px){
-    h2{
-    padding-left: 200px;}
+
+.destaque {
+    color: #00d4ff; /* Um azul para dar destaque à "alta performance" */
 }
-iframe{
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #00d4ff;
+}
+
+/* Blocos de Texto */
+p {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente para modernidade */
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #00d4ff;
+    margin-bottom: 20px;
+}
+
+/* Botão de Chamada (CTA) */
+.btn-principal {
+    display: inline-block;
+    background-color: #00d4ff;
+    color: #000;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    margin: 20px 0;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn-principal:hover {
+    transform: scale(1.05);
+    background-color: #fff;
+}
+
+/* Formulário */
+.form-container {
+    margin-top: 50px;
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+iframe {
     width: 100%;
-    height: 800px;
+    min-height: 600px;
     border: none;
-    margin-top: 20px;
-    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    h1 { font-size: 1.8rem; }
 }
