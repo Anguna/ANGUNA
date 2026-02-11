@@ -106,3 +106,64 @@ footer {
 @media (max-width: 600px) {
     h1 { font-size: 1.8rem; }
 }
+
+/* Estilo do Formulário */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--cinza-transparente); /* Usando sua variável do código anterior */
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.campo label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--laranja);
+}
+
+.campo input, .campo textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.campo input:focus, .campo textarea:focus {
+    outline: none;
+    border-color: var(--laranja);
+    box-shadow: 0 0 5px var(--laranja);
+}
+
+/* Ajuste do botão dentro do form */
+.formulario-contato .btn-principal {
+    cursor: pointer;
+    border: none;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 600px) {
+    #contato {
+        padding: 20px 10px;
+    }
+    
+    .form-container {
+        padding: 15px;
+    }
+}
